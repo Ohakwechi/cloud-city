@@ -22,7 +22,7 @@ const PayButton = ({ product, phone }: { product: any, phone: string }) => {
 
   const onSuccess = (reference: any) => {
     const message = `Payment Verified! ✅%0AItem: ${product.name}%0APrice: ₦${product.price}%0ARef: ${reference.reference}%0APhone: ${phone}`;
-    window.open(`https://wa.me/2348012345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/2349066596603?text=${message}`, '_blank');
   };
 
   return (
