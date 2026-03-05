@@ -2,8 +2,15 @@
   import React from 'react';
   import { ShoppingCart, Search, Menu, ArrowRight, Star } from 'lucide-react';
   import NavBar from '@/components/NavBar';
-  import ProductGrid from '@/components/ProductGrid';
+  import dynamic from 'next/dynamic'; // Import this
+  
 
+
+  // Dynamically import ProductGrid and disable Server-Side Rendering (SSR)
+const ProductGrid = dynamic(() => import('@/components/ProductGrid'), { 
+  ssr: false,
+  loading: () => <div className="p-20 text-center">Loading Store...</div>
+});
 
 
   export default function EcommerceHome() {
@@ -33,7 +40,7 @@
         {/* --- Footer --- */}
         <footer className="bg-slate-900 text-slate-400 py-12">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <p>© 2026 LUMINA E-Commerce. Built by Buttons.</p>
+            <p>© 2026 CloudCity E-Commerce. Built by Buttons.</p>
           </div>
         </footer>
       </div>

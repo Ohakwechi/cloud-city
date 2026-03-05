@@ -10,7 +10,7 @@ const NavBar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-8">
-              <h1 className="text-2xl font-bold tracking-tighter text-indigo-600">cloud-city</h1>
+              <h1 className="text-2xl font-bold track ing-tighter text-indigo-600">CloudCity</h1>
               <div className="hidden md:flex gap-6 text-sm font-medium">
                 <a href="#" className="hover:text-indigo-600 transition">Shop</a>
                 <a href="#" className="hover:text-indigo-600 transition">New Arrivals</a>
